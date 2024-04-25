@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap');
+
+
+body{
+    /* background: linear-gradient(to bottom, rgb(198,190,238), rgb(208,148,234), rgb(235,148,207), rgb(245,151,148)); */
+    background: linear-gradient(to bottom, rgb(245,151,148), rgb(235,148,207), rgb(208,148,234), rgb(198,190,238));
+    font-family: 'Bodoni Moda', normal;
+    line-height: inherit
+}
+
+
+header{
+    text-align: center;
+    font: normal 'Bodoni Moda';
+    position: absolute;
+    top:0;
+    left: 0;
+    width: auto;
+    padding: 20px 10%;
+    background:transparent;
+    display:inline-flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navBar a {
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500px;
+    margin-left: 35px;
+    transition: .3s;
+}
+.navBar a:hover,
+.navBar a.active{
+    color:#5782c9;
+}
+section{
+    background-color: white;
+    border-radius: 10px;
+    padding:15px;
+    width:500px;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    box-shadow: 3px 3px 10px rgba(5, 5, 5, 0.363);
+}
+
+div{
+    text-align: center;
+    padding: 7px;
+}
+
+.intro {
+    width:80%;
+    height: 500px;
+    background-image: url('img/posterErasTour.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 50px;
+    text-align: center;
+    color: white;
+}
+
+
+.intro .start-btn{
+    width: 400px;
+    height: 40px;
+    background: #5EB7FF;
+    color: white;
+    font-weight: bold;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    position: relative;
+    bottom: -535px;
+}
+
+.start-btn:hover{
+    cursor: pointer;
+    background-color: #4287f5;
+    transition: 0.3s ease-out;
+}
+
+.options {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas com largura igual */
+    gap: 10px; /* Espaço entre os botões */
+}
+
+.options button {
+    width: 100%; /* Botões ocupam toda a largura da coluna */
+    height:auto;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+.option-button img {
+    width: 100px; /* Imagem ocupa toda a largura do botão */
+    height: 20px; /* Altura ajustável para manter a proporção */
+
+}
+
+/* Estilo para o contêiner dos botões */
+.button-container {
+    display: flex; /* Para os botões ficarem lado a lado */
+    list-style: none;
+    margin: 0;
+    justify-content: flex-end; /* Alinha os botões à esquerda */
+    gap: 10px; /* Espaçamento entre os botões */
+}
+
+/* Estilo para os botões de compartilhamento */
+.share-button, .copy-button {
+    width: 50px; /* Define a largura */
+    height: 50px; /* Define a altura */
+    background-color: transparent; /* Cor de fundo (pode ser ajustada) */
+    border: none; /* Remove a borda */
+    cursor: pointer; /* Muda o cursor ao passar por cima */
+    display: flex; /* Permite centralizar a imagem dentro do botão */
+    justify-content: center; /* Centraliza a imagem horizontalmente */
+    align-items: center; /* Centraliza a imagem verticalmente */
+    border-radius: 50%; /* Define a borda circular */
+    transition: background-color 0.3s; /* Efeito de transição suave ao passar o mouse */
+}
+
+/* Estilo para os ícones dentro dos botões */
+.share-button i, .copy-button i {
+    font-size: 24px; /* Tamanho do ícone */
+    color: black; /* Cor do ícone (pode ser ajustada) */
+}
+
+/* Estilo para o hover nos botões */
+.share-button:hover, .copy-button:hover {
+    background-color: rgba(0, 123, 255, 0.1); /* Altera a cor de fundo ao passar o mouse */
+}
+
+.about h1{
+    text-Align: center;
+}
+.about {
+    text-align: justify;
+}
+
+.centered-image{
+    display: block;
+    margin: 0 auto;
+}
+
+footer{
+    color: #fff; /* Cor do texto no rodapé */
+    padding: 20px; /* Espaçamento interno do rodapé */
+    text-align: center; /* Centralizar o conteúdo do rodapé */
+    position: fixed; /* Fixar o rodapé no fundo da página */
+    left: 0;
+    bottom: 0;
+    width: 100%; /* Largura total */
+}
